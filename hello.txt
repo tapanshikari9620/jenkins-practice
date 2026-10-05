@@ -1,0 +1,26 @@
+Step 3 — Then we'll configure Jenkins
+We will not use credentials yet because the repository is public.
+In Jenkins:
+jenkins-basic-test
+       ↓
+Configure
+       ↓
+Source Code Management
+       ↓
+Git
+
+Then we'll put your GitHub repository URL there.
+For example:
+https://github.com/<your-username>/jenkins-practice.git
+
+Then Jenkins will automatically clone the repository into:
+/var/lib/jenkins/workspace/jenkins-basic-test
+
+and we'll run:
+ls -la
+cat hello.txt
+
+That will teach you an important Jenkins concept: workspace.
+Don't configure Jenkins yet.
+First create the GitHub repository and add hello.txt.
+Once you've done that, send me the GitHub repository URL (the repository itself can be public), and I'll guide you through the Jenkins configuration step by step.
